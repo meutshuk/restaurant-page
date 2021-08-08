@@ -19,9 +19,11 @@ li {
 * {
   padding: 0;
   margin: 0;
-  background: #3772f1;
 }
 
+html {
+  background: #3772f1;
+}
 .logo {
   font-family: "MonteCarlo", cursive;
   transition: all 0.3s ease 0s;
@@ -117,8 +119,7 @@ img {
   margin: 0px 5px;
 }
 
-/** Menu h3 only */
-.menu h2 {
+.bigText {
   display: flex;
   text-decoration: underline dotted;
   text-decoration-color: gold;
@@ -144,4 +145,40 @@ img {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   /* color: rgb(21, 193, 219); */
+}
+
+/** Might remove */
+.contactUs {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  padding: 10px;
+  background: burlywood;
+  height: 300px;
+  border-radius: 50px;
+  padding: 0px 30px;
+}
+
+h3.name {
+  font-size: 1.5rem;
+  color: darkslategrey;
+  font-family: "Oswald";
+  display: flex;
+  justify-content: center;
+}
+
+.contactUs div p {
+  font-family: "Oswald";
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contactUs div .openHour{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
 }

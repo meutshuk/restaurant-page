@@ -12,6 +12,7 @@ const menu = (content) => {
 
   //* assignining h2 text
   h2.textContent = "Menu";
+  h2.classList.add('bigText')
 
   //* assigning class name for the element
   divMenuItem.classList.add("menu-item");
