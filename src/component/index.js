@@ -2,6 +2,7 @@ import { navbar } from "./navbar";
 import { home } from "./home";
 import { menu } from "./menu";
 import { contactUs } from "./contactUs";
+import "../style.css";
 
 const index = (() => {
   navbar();
