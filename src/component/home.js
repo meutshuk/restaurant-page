@@ -9,7 +9,7 @@ const home = (content) => {
   divHomeWord.classList.add("home-word");
 
   divHomeWord.innerText = "Discover the true Taste of your food";
-  img.src = "../../dist/food3.png";
+  img.src = "../src/food3.png";
 
   // img.src = Icon;
   // const myIcon = new Image();
