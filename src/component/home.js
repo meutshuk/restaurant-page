@@ -1,21 +1,23 @@
-import Icon from "../food3.png";
+// import Icon from "../food3.png";
 
 const home = (content) => {
   const divHome = document.createElement("div");
   const divHomeWord = document.createElement("div");
-  // const img = document.createElement("img");
+  const img = document.createElement("img");
 
   divHome.classList.add("home");
   divHomeWord.classList.add("home-word");
 
   divHomeWord.innerText = "Discover the true Taste of your food";
-  // img.src = "../src/food3.png";
-  const myIcon = new Image();
+  img.src = "../../dist/food3.png";
+
   // img.src = Icon;
-  myIcon.src = Icon;
+  // const myIcon = new Image();
+  // myIcon.src = Icon;
 
   divHome.appendChild(divHomeWord);
-  divHome.appendChild(myIcon);
+  // divHome.appendChild(myIcon);
+  divHome.appendChild(img);
 
   content.appendChild(divHome);
 };
