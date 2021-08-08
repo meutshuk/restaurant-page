@@ -3,17 +3,19 @@ import Icon from "../food3.png";
 const home = (content) => {
   const divHome = document.createElement("div");
   const divHomeWord = document.createElement("div");
-  const img = document.createElement("img");
+  // const img = document.createElement("img");
 
   divHome.classList.add("home");
   divHomeWord.classList.add("home-word");
 
   divHomeWord.innerText = "Discover the true Taste of your food";
   // img.src = "../src/food3.png";
-  img.src = Icon;
+  const myIcon = new Image();
+  // img.src = Icon;
+  myIcon.src = Icon;
 
   divHome.appendChild(divHomeWord);
-  divHome.appendChild(img);
+  divHome.appendChild(myIcon);
 
   content.appendChild(divHome);
 };
